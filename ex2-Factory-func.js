@@ -2,7 +2,7 @@
 // First use Factory function then Constructor function
 
 // Factory function
-let address =createAddress('a','b', 'c');
+//let address =createAddress('a','b', 'c');
 console.log(address);
 
 function createAddress(street, city, zipCode) {
