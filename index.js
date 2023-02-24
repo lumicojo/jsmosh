@@ -1,20 +1,11 @@
-// calculate all the num in array
-const numbers = [1, -1, 2, 3];
+const numbers = [1, 2, 3, 4];
+const output = move(numbers, 0, 1);
 
-let sum = 0;
-for (let n of numbers)
-  sum += n;
-  console.log(sum);// 5
+console.log(output);
 
-
-// reduce we can reduce all elem in this arr i a single numb value
-
-const sum = numbers.reduce((acumulator, currentValue) => {
-  return acumulator + currentValue;
-},0);
-console.log(sum); //5
-
-// // short way
-const sum = numbers.reduce(
-  (acumulator, currentValue) => acumulator + currentValue);
-  console.log(sum); // 5
+function move(array, index, offset ) {
+  const output = [...array];  //clone orig arr
+  const element = output.splice(index, 1)[0];
+  output.splice(index + offset, 0, element);
+  return output;
+}
