@@ -1,11 +1,29 @@
-const numbers = [1, 2, 3, 4];
-const output = move(numbers, 0, 1);
 
-console.log(output);
+// function start() {
+//   const message = 'hi';
 
-function move(array, index, offset ) {
-  const output = [...array];  //clone orig arr
-  const element = output.splice(index, 1)[0];
-  output.splice(index + offset, 0, element);
-  return output;
+//   if (true) {
+//     const another = 'bye';
+//   }
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//   }
+// }
+// start();
+
+
+
+// Global Scope
+const color = 'red';
+
+function start() {
+  const message = 'hi';
+  const color = 'blue'; // blue
+  console.log(color);
 }
+
+function stop() {
+  const message = 'bye';
+}
+
+start();
