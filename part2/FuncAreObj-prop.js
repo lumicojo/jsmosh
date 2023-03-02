@@ -1,4 +1,5 @@
-
+ //Function are Object
+ //constructor func
 function Circle(radius) {
   this.radius = radius;
   this.draw = function() {

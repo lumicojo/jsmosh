@@ -7,8 +7,8 @@ const circle = {
 //         for  in loop
 
 //to get the keys
-// for (let key in circle)
-// console.log(key);
+for (let key in circle)
+console.log(key);
 
 //      for in loop to get the value []
 for (let key in circle)
