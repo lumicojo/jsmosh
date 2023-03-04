@@ -1,18 +1,18 @@
-
+//Modifing prototype
 //      FOR LOOP Return All members (instance + prototype)
 //  Object the keys return only the instance members
  // instance is same as OwnProperty
-function Circle(radius) {
-   this.radius = radius;
+ function Circle(radius) {
+  this.radius = radius;
 
-  this.move = function() {
-    console.log('move');
+ this.move = function() {
+   console.log('move');
 
-  }
+ }
 }
 const c1 = new Circle(1);
 Circle.prototype.draw = function() {
-  console.log('draw');
+ console.log('draw');
 }
 c1.draw();
 
